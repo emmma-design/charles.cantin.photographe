@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles Cantin</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+          <a class="btn-logo" href="/index.html"><img src="/images/LOGO.png" alt="logo header"></a>
+        </div>
+        <div class="btn-box">
+          <a class="btn-menu">Instagram</a>
+          <a class="btn-menu">Facebook</a>
+          <a class="btn-menu" href="/index.html">Accueil</a>
+          <a class="btn-menu" href="/galerie.html">Galerie</a>
+          <a class="btn-menu" href="/tarifs.html">Tarifs et prestations</a>
+          <a class="btn-menu" href="/contact.html">Contact</a>
+        </div>
+
+      <div class="burger">
+          <div class="burger_bar"></div>
+          <div class="burger_bar"></div>
+      </div>
+    </div>
+
+    <div class="burger-menu">
+          <a class="btn-menu">Instagram</a>
+          <a class="btn-menu">Facebook</a>
+          <a class="btn-menu" href="/index.html">Accueil</a>
+          <a class="btn-menu" href="/galerie.html">Galerie</a>
+          <a class="btn-menu" href="/tarifs.html">Tarifs et prestations</a>
+          <a class="btn-menu" href="/contact.html">Contact</a>
+      </div>
+    </div>
+
+    <div class="titre">
+        <h1>Tarifs et prestations</h1>
+    </div>
+
+    <div class="allCards">
+        <ul class="cards">
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_content">
+                <h2 class="card_title">Juste moi</h2>
+                <p class="card_text">Séance pour une personne, en extérieur ou en studio</p>
+                <p>130€</p>
+                <a class="btn-contact" href="/contact.html">Contacter</a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_content">
+                <h2 class="card_title">Pour deux</h2>
+                <p class="card_text">Pour deux personnes, en extérieur ou en studio</p>
+                <p>195€</p>
+                <a class="btn-contact" href="/contact.html">Contacter</a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_content">
+                <h2 class="card_title">Famille</h2>
+                <p class="card_text">Pour la famille ou les amis jusqu’à 4 personnes, en extérieur ou en studio
+                    30 euros en supplément par personne au-delà de 4 (hormis enfant jusqu’à 2 ans) </p>
+                <p>220€</p>
+                <a class="btn-contact" href="/contact.html">Contacter</a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_content">
+                <h2 class="card_title">Il était une fois</h2>
+                <p class="card_text">Photo de grossesse (À votre domicile, en extérieur ou en studio)</p>
+                <p>160€</p>
+                <a class="btn-contact" href="/contact.html">Contacter</a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_content">
+                <h2 class="card_title">Mon bébé</h2>
+                <p class="card_text">Photo d’enfant jusqu’à 3 ans (photo à domicile)</p>
+                <p>100€</p>
+                <a class="btn-contact" href="/contact.html">Contacter</a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_content">
+                <h2 class="card_title">J'immortalise l'évènement</h2>
+                <p class="card_text">Prestation de mariage ou baptême sur devis</p>
+                <p>Sur mesure</p>
+                <a class="btn-contact" href="/contact.html">Contacter</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+    </div>
+
+    <script>
+      const menu = document.querySelector(".burger-menu");
+      const hamburger= document.querySelector(".burger");
+      
+      
+      function toggleMenu() {
+        if (menu.classList.contains("showMenu")) {
+          menu.classList.remove("showMenu");
+        } else {
+          menu.classList.add("showMenu");
+        }
+      }
+      
+      hamburger.addEventListener("click", toggleMenu);
+      </script>
+</body>
+</html>
+    
