@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles Cantin</title>
+    <link rel="stylesheet" href="text/css" href="/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/style.css"
+
+</head>
+<body>
+    <div class="background">
+        <img src="/images/backgroundaccueil.jpg" alt="background">
+    </div>
+    <div class="header">
+        <div class="logo">
+            <a class="btn-logo" href="/index.html"><img src="/images/LOGO.png" alt="logo header"></a>
+        </div>
+        <div class="btn-box">
+                <a class="btn-menu">Instagram</a>
+                <a class="btn-menu">Facebook</a>
+                <a class="btn-menu" href="/index.html">Accueil</a>
+                <a class="btn-menu" href="/galerie.html">Galerie</a>
+                <a class="btn-menu" href="/tarifs.html">Tarifs et prestations</a>
+                <a class="btn-menu" href="/contact.html">Contact</a>
+        </div>
+
+        <div class="burger">
+            <div class="burger_bar"></div>
+            <div class="burger_bar"></div>
+        </div>
+    </div>
+
+    <div class="burger-menu">
+                <a class="btn-menu">Instagram</a>
+                <a class="btn-menu">Facebook</a>
+                <a class="btn-menu" href="/index.html">Accueil</a>
+                <a class="btn-menu" href="/galerie.html">Galerie</a>
+                <a class="btn-menu" href="/tarifs.html">Tarifs et prestations</a>
+                <a class="btn-menu" href="/contact.html">Contact</a>
+    </div>
+
+    <div class="main ov">
+        <div class="hero">
+            <div id="titre" class="text">
+                <h1>Charles Cantin</h1>
+                <p id="sousTitre">PHOTOGRAPHE</p>
+                <a class="btn-contact" href="/contact.html">Contacter</a>
+            </div>  
+        </div>  
+    </div>
+
+
+    <script>
+const menu = document.querySelector(".burger-menu");
+const hamburger= document.querySelector(".burger");
+
+
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+  } else {
+    menu.classList.add("showMenu");
+  }
+}
+
+hamburger.addEventListener("click", toggleMenu);
+    </script>
+</body>
+</html>
